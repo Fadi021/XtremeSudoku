@@ -49,7 +49,7 @@ public class ExtremePanel extends JPanel implements Observer {
 
 
 
-//input Listener connects extreme panel to extreme controller inputs are Controled by the Controller
+//input listener connects extreme panel to extreme controller inputs are Controled by the Controller
  public void setExtremeController(ExtremeController extremeController) {
   for (int y = 0; y < 3; y++) {
    for (int x = 0; x < 3; x++)
