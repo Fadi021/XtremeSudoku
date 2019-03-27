@@ -4,7 +4,7 @@ import java.awt.event.MouseListener;
 import javax.swing.JPanel;
 
 
-// Controls all actions from User done in the Extreme panel
+// Controls all inputs made by the user in Extreme panel
 
 public class ExtremeController implements MouseListener {
  private ExtremePanel extremePanel; 
@@ -16,7 +16,7 @@ public class ExtremeController implements MouseListener {
  public void mouseExited(MouseEvent e) {}
  public void mouseReleased(MouseEvent e) {}
  
- //Sets game panel to control(extremePanel) conects it to the game
+ // Sets game panel to control(extremePanel) and conects it to the game
  
  
  public ExtremeController(ExtremePanel extremePanel, Game game) {
@@ -24,7 +24,7 @@ public class ExtremeController implements MouseListener {
   this.game = game;
  }
 
-//When user Tries to input numbers this functions is called and updates the game depending on the action
+//When user tries to input numbers, this functions is called and updates the game based off the action
  
  public void mousePressed(MouseEvent e) {
   JPanel panel = (JPanel) e.getSource();
@@ -34,7 +34,7 @@ public class ExtremeController implements MouseListener {
    int x = grid.getXpos();
    int y = grid.getYPos();
 
-//Controls inputs made by the User evaluates them and Updates candiates in Class UpdateAction 
+//Controls inputs made by the User, evaluates them and Updates candiates in Class UpdateAction 
    
    if (e.getButton() == MouseEvent.BUTTON1) {
     int number = game.getInputNumber(); 
