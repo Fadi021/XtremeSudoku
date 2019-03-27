@@ -1,8 +1,9 @@
 # XtremeSudoku
-How to run the ExtremeSudoku game:
-Need java compiler
-Download the XtremeSudoku.ZIP 
-extract file on any folder of your choosing
+
+- To run you need to Dowload this:
+  - Need java compiler
+  - Download the XtremeSudoku.ZIP 
+ extract file on any folder of your choosing
 
 how to run:
 - Open Command prompt
