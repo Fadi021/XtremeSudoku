@@ -3,7 +3,7 @@ import java.awt.event.ActionListener;
 
 
 
-// This class controls all the action done in the Input Panel sends update the other classes depending on user input
+// This class controls all the actions in the Input Panel and sends updates to the other classes
 public class ActionController implements ActionListener {
  private Game game;
 
@@ -11,8 +11,8 @@ public class ActionController implements ActionListener {
   this.game = game;
  }
 
-// Preforms the action done by user making an input in the game
-//Sends an Update to the Game class to be updated based on the input of the User
+// Performs the action inputed by the user
+// Sends an Update to the Game class based on the input of the User
  public void actionPerformed(ActionEvent e) {
   if (e.getActionCommand().equals("New"))
    game.createGame();
