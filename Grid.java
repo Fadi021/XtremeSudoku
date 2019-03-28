@@ -29,8 +29,7 @@ public class Grid extends JLabel {
  }
 
 //returns the x and y position
-
- public int getXpos() {
+public int getXpos() {
   return xPos;
  }
 
