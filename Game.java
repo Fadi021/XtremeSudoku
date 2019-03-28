@@ -136,7 +136,7 @@ return copy;
  }
 
 
-
+//basic constructor 
 
  public Game() {
   createGame();
@@ -181,6 +181,7 @@ return copy;
  }
 
 
+// The rule of where numbers cant match is implemented
 
  private boolean validX(int[][] game, int y, int number) {
   for (int x = 0; x < 9; x++) {
