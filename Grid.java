@@ -8,7 +8,7 @@ public class Grid extends JLabel {
  private int xPos;
  private int yPos; 
 
-// Set X and Y position on the Grid for the Game
+// Set X and Y position on the Grid for the Game which creates our 2d dimension game
  public Grid(int x, int y) {
   super("", CENTER);
   this.xPos = x;
@@ -23,11 +23,12 @@ public class Grid extends JLabel {
  }
 
 //Input sets input depending if input is from user or not
+ // checks for proper input from the user
  public void setInput(int number, boolean userInput) {
   setText(number > 0 ? number + "" : "");
  }
 
-//geters for the x and y position
+//returns the x and y position
 
  public int getXpos() {
   return xPos;
