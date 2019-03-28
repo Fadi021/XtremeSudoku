@@ -69,6 +69,9 @@ return copy;
  }
 
 // generates game from solution and calls isValid to validate the inputs
+// As long as there is positions on a list,
+// X and Y are taken, replaced with a temp (0 meaning blank)
+// If blank, the game is no longer valid.
  
  private int[][] gameCreator(int[][] game, List < Integer > positions) {
   while (positions.size() > 0) {
