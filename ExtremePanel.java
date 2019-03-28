@@ -6,7 +6,6 @@ import java.util.Observer;
 import javax.swing.BorderFactory;
 import javax.swing.JPanel;
 
-
 // ExtremePanel creates the Input panels
 // Interacts with Update action class to Update the game
 public class ExtremePanel extends JPanel implements Observer {
