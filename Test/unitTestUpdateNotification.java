@@ -1,4 +1,4 @@
-
+// Test case to check if system gets updated when user makes an input
 import java.util.Scanner;
 
 public class unitTestUpdateNotification {
