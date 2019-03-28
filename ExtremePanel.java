@@ -36,8 +36,6 @@ public class ExtremePanel extends JPanel implements Observer {
   }
  }
 
-
-
  //Creates game hides Number Candidates to create Game
  public void setGame(Game game) {
   for (int y = 0; y < 9; y++) {
