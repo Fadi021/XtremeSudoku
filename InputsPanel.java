@@ -22,7 +22,7 @@ public class InputsPanel extends JPanel implements Observer {
  JButton newBTN;
  JButton exitBTN; 
 
-//Update Notification to UpdateAction
+//Allows an Update for Notification to UpdateAction
  public void update(Observable o, Object arg) {
   switch ((UpdateAction) arg) {
    case NEW_GAME:
