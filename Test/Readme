@@ -1,11 +1,70 @@
 #Test Cases
-- UnitTestNullException():
+how to run: 
+
+To run you need to Dowload this:
+Need java compiler (Java SE 8)
+Download the XtremeSudoku.ZIP extract file on any folder of your choosing
+- how to run: Change Directory of the comand prompt to the folder containig the test cases
+  - maker sure to comile and create all the Test classes
+  - Choose which Test you want to run
+  - just run the desired test in your computer
+- E.G command prompt:
+  - javac ImplementationTest.java
+  - java ImplementationTest
+
+
+- UnitTestNullException(): checks to see what happens when passing a null to the game class asking it to create a new game
+  - Expected Result: arg = Argument should not be not
   - Files used:
     - UnitTestUpdater.java
     - TestHelper.java
     - unitTestUpdateNotification.java
+    
+- unitTestPrintSolution(): ask a game to create a game without creating the blanks check if pritend correctly
+  - Expected Result Sudoku grid with NO blanks spots or 0
+  - File used:
+    - TestHelper.java
+    - unitTestPrintSolution.java
+    - E.G:
+      -  5 2 3 8 9 4 6 1 7
+         1 7 8 3 5 6 4 2 9
+         9 4 6 1 2 7 5 8 3
+         2 3 7 5 8 1 9 6 4
+         6 5 9 2 4 3 1 7 8
+         4 8 1 7 6 9 2 3 5
+         7 9 2 4 1 8 3 5 6
+         8 1 4 6 3 5 7 9 2
+         3 6 5 9 7 2 8 4 1
+         
+- unitTestPrintBlanks(): ask a game to create a playable game and creating the blanks. check if pritend correctly
+  - Expected Result Sudoku grid with blanks or 0 representing space for Input
+  - File used:
+    - TestHelper.java
+    - unitTestPrintBlanks.java
+    - E.G:
+      -   0 0 5 7 0 0 0 9 0
+          0 0 0 3 0 0 1 0 0
+          4 0 2 0 6 0 0 0 0
+          3 0 0 2 0 0 0 7 0
+          0 0 1 0 0 0 0 0 0
+          0 0 6 0 0 8 4 0 5
+          0 6 0 0 5 0 0 0 8
+          0 0 8 0 0 2 0 0 0
+          0 0 0 0 4 0 7 0 0
 
-- ImplementationTestCase(): This test is done to sastify the Acceptance test
+
+- unitTestUpdateNotification(): checks when user makes an update request. Checks if System was notified
+  - Expected Result
+    - Given 1: True
+    - Given 2: Flase
+   - File Used:
+     - UnitTestUpdater.java
+     - TestHelper.java
+     - unitTestUpdateNotification.java
+
+   
+- ImplementationTestCase(): This test is done to sastify the Acceptance test checks if the game prints the a new sudoku game 
+  and Updates the classes about the update
   - This Test prints out a 9x9 Sudoku with 0 representing blank spots for user input
   - File used:
     - ImplementationTest.java
