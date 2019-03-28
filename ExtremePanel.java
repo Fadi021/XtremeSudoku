@@ -14,7 +14,7 @@ public class ExtremePanel extends JPanel implements Observer {
  private Grid[][] sudokuGrid; // Array of fields.
  private JPanel[][] sudokuPanel; // Panels holding the fields.
 
- //Creates grid and concatenates it with Panel
+//Creates grid and concatenates it with Panel
  public ExtremePanel() {
   super(new GridLayout(3, 3));
 //The inner 3 by 3 grid is created 
@@ -45,8 +45,6 @@ public class ExtremePanel extends JPanel implements Observer {
    }
   }
  }
-
-
 
 //input listener connects extreme panel to extreme controller inputs are Controled by the Controller
  public void setExtremeController(ExtremeController extremeController) {
