@@ -1,9 +1,11 @@
+//libraries imported to perform neccesary functions
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import javax.swing.BorderFactory;
 import javax.swing.JLabel;
 
+// extends to parent class
 public class Grid extends JLabel {
  private int xPos;
  private int yPos; 
@@ -28,11 +30,11 @@ public class Grid extends JLabel {
   setText(number > 0 ? number + "" : "");
  }
 
-//returns the x and y position
+//returns the x postion
 public int getXpos() {
   return xPos;
  }
-
+//returns y position
  public int getYPos() {
   return yPos;
  }
