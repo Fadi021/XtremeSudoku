@@ -40,7 +40,7 @@ public class InputsPanel extends JPanel implements Observer {
  }
 
 
-// border layout disply for the game
+// implementation of the border layout disply for the game
 
 public InputsPanel() {
   super(new BorderLayout());
