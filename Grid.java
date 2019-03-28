@@ -13,7 +13,9 @@ public class Grid extends JLabel {
   super("", CENTER);
   this.xPos = x;
   this.yPos = y;
-
+  
+  // Create the dimensions of the board as well as the
+  // Colour and Font
   setPreferredSize(new Dimension(50, 50));
   setBorder(BorderFactory.createLineBorder(Color.BLACK));
   setFont(new Font(Font.DIALOG, Font.PLAIN, 25));
@@ -25,8 +27,8 @@ public class Grid extends JLabel {
   setText(number > 0 ? number + "" : "");
  }
 
-//geters for x and y position
- 
+//geters for the x and y position
+
  public int getXpos() {
   return xPos;
  }
