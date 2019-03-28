@@ -40,8 +40,9 @@ public class InputsPanel extends JPanel implements Observer {
  }
 
 
+// border layout disply for the game
 
- public InputsPanel() {
+public InputsPanel() {
   super(new BorderLayout());
   
   groupNum = new ButtonGroup();
