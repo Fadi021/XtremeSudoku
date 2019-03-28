@@ -1,4 +1,4 @@
-
+// Print full 9x9 sudoku grid with NO 0's
 
 public class unitTestPrintSolution {
 	
