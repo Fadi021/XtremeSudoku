@@ -1,3 +1,4 @@
+// different libraries imported in order to use various functions
 import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Observable;
@@ -16,7 +17,7 @@ public class ExtremePanel extends JPanel implements Observer {
  //Creates grid and concatenates it with Panel
  public ExtremePanel() {
   super(new GridLayout(3, 3));
-
+//The inner 3 by 3 grid is created 
   sudokuPanel = new JPanel[3][3];
   for (int y = 0; y < 3; y++) {
    for (int x = 0; x < 3; x++) {
@@ -25,7 +26,7 @@ public class ExtremePanel extends JPanel implements Observer {
     add(sudokuPanel[y][x]);
    }
   }
-
+// The outer 9 by 9 grid is created
   sudokuGrid = new Grid[9][9];
   for (int y = 0; y < 9; y++) {
    for (int x = 0; x < 9; x++) {
