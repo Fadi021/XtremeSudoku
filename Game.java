@@ -1,3 +1,4 @@
+//import various libraries in order to use various functions
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -9,6 +10,7 @@ public class Game extends Observable {
  //Generates game and solution
  //Check inputs of the user to check for Valid input
 
+ //creating a 2d array
  private int[][] solution;
  private int[][] playable;
  private int inputNumber;
