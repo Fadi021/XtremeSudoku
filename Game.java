@@ -56,8 +56,10 @@ return copy;
 }
 
 
-// generates the Game the depending on the value of the 
- 
+// Generates the Game
+// Fills a list with possible positions
+// The list is shuffled and passed through the method gamecreator
+ // abd the return value is returned
  private int[][] gameCreator(int[][] game) {
   List < Integer > positions = new ArrayList < Integer > ();
   for (int i = 0; i < 81; i++)
