@@ -63,7 +63,7 @@ return copy;
 // Generates the Game
 // Fills a list with possible positions
 // The list is shuffled and passed through the method gamecreator
- // abd the return value is returned
+ // and the return value is returned
  private int[][] gameCreator(int[][] game) {
   List < Integer > positions = new ArrayList < Integer > ();
   for (int i = 0; i < 81; i++)
@@ -75,7 +75,7 @@ return copy;
 // generates game from solution and calls isValid to validate the inputs
 // As long as there is positions on a list,
 // X and Y are taken, replaced with a temp (0 meaning blank)
-// If blank, the game is no longer valid.
+// The game will not return anything if left blank
  
  private int[][] gameCreator(int[][] game, List < Integer > positions) {
   while (positions.size() > 0) {
@@ -191,7 +191,7 @@ return copy;
   return true;
  }
 
-
+//The use of boolean to check if proper input was precieved by user
  private boolean validY(int[][] game, int x, int number) {
   for (int y = 0; y < 9; y++) {
    if (game[y][x] == number)
