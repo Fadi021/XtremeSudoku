@@ -62,5 +62,4 @@ public class ExtremePanel extends JPanel implements Observer {
 
   }
  }
- 
 }
