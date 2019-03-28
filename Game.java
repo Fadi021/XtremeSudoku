@@ -24,13 +24,15 @@ public class Game extends Observable {
   if (index > 80)
    return game;
 
+  //creating the difference between X and Y
+ 
   int x = index % 9;
   int y = index / 9;
 
   List < Integer > numbers = new ArrayList < Integer > ();
   for (int i = 1; i <= 9; i++) numbers.add(i);
   Collections.shuffle(numbers);
-
+// Not allowing negative numbers
   while (numbers.size() > 0) {
    int number = nextNumber(game, x, y, numbers);
    if (number == -1)
