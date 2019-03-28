@@ -25,6 +25,7 @@ public class ExtremePanel extends JPanel implements Observer {
     add(sudokuPanel[y][x]);
    }
   }
+  
 // The outer 9 by 9 grid is created
   sudokuGrid = new Grid[9][9];
   for (int y = 0; y < 9; y++) {
@@ -59,7 +60,6 @@ public class ExtremePanel extends JPanel implements Observer {
    case NEW_GAME:
     setGame((Game) o);
     break;
-
   }
  }
 }
