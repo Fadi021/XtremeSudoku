@@ -1,6 +1,6 @@
 
 
-//
+//Class to check if Input from user was notified to the system
 public class UnitTestUpdater {
     static boolean newGameInput = false;
     
