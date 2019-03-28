@@ -1,3 +1,4 @@
+//All the libraries required to be imported and used 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
@@ -60,8 +61,9 @@ public class InputsPanel extends JPanel implements Observer {
   newBTN = new JButton("New");
   newBTN.setFocusable(false);
   gameOptions.add(newBTN);
-
-  JPanel gameNumbers = new JPanel();
+// object being created to be used in layout
+ 
+JPanel gameNumbers = new JPanel();
   gameNumbers.setLayout(new BoxLayout(gameNumbers, BoxLayout.PAGE_AXIS));
   gameNumbers.setBorder(BorderFactory.createTitledBorder(" Numbers: "));
   gameAlign.add(gameNumbers);
@@ -70,7 +72,7 @@ public class InputsPanel extends JPanel implements Observer {
   JPanel gameNumbers2 = new JPanel(new FlowLayout(FlowLayout.LEADING));
   gameNumbers.add(gameNumbers2);
 
-
+// a for loop checking for numbers less than 9 
   for (int i = 0; i < 9; i++) {
    numberBTN[i] = new JToggleButton("" + (i + 1));
    numberBTN[i].setPreferredSize(new Dimension(40, 40));
